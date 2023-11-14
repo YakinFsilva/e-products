@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Product from "../components/Product";
-import   "../components/Product.module.css";
+import styles from "../components/Product.module.css";
 
 
 const Home: React.FC = () => {
@@ -31,15 +31,14 @@ const Home: React.FC = () => {
   ];
 
   return (
-  
-    <div className='product-div'>
+    
+   <div className={styles.productsContent}>
       
-      <div className="product-list">
         {products.map((product) => (
           <Product key={product.id} product={product} />
         ))}
       </div>
-    </div>
+    
   );
 };
 
