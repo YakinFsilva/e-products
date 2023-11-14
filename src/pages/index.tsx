@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Product from "../components/Product";
+import   "../components/Product.module.css";
+
 
 const Home: React.FC = () => {
   const products = [
@@ -29,8 +31,9 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div>
-      <h1>!!!!!!!!!!!!!!!!!!!</h1>
+  
+    <div className='product-div'>
+      
       <div className="product-list">
         {products.map((product) => (
           <Product key={product.id} product={product} />

@@ -1,25 +1,30 @@
 /* src/components/Product.module.css */
 
 
+.product-div{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
 .product-list {
   display:flex ;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid red;
+  background-color: red;
+  
 }
-.product-container {
- display: flex ;
-  justify-content: space-around;
-  align-items: center;
-}
+
 
 .product {
   width: 25% ; 
-  border: 1px solid #ccc;
+  border: 1px solid darkgoldenrod;  
   padding: 16px;
   text-align: center;
   box-sizing: border-box;
   margin: 10px;
+
 }
 
 .product img {
@@ -38,7 +43,7 @@
 }
 
 .product button {
-  background-color: #4caf50;
+  background-color:darkgoldenrod;
   color: white;
   padding: 8px 16px;
   border: none;
